@@ -1,153 +1,285 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Bach Hoai | Developer</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial;
-    background:#0f172a;
-    color:white;
+font-family:Inter;
+background:#0f172a;
+color:white;
 }
 
 .container{
-    max-width:900px;
-    margin:auto;
-    padding:40px;
+max-width:1100px;
+margin:auto;
+padding:40px;
 }
 
-.header{
-    text-align:center;
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:60px;
+}
+
+.logo{
+font-weight:700;
+font-size:20px;
+}
+
+nav a{
+color:#94a3b8;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#94a3b8;
+margin-bottom:25px;
+}
+
+.buttons a{
+display:inline-block;
+padding:12px 20px;
+margin-right:10px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-primary{
+background:#38bdf8;
+color:black;
+}
+
+.btn-secondary{
+border:1px solid #38bdf8;
+color:#38bdf8;
 }
 
 .avatar{
-    width:150px;
-    border-radius:50%;
-    border:4px solid #38bdf8;
-}
-
-h1{
-    margin:15px 0 5px 0;
-}
-
-.bio{
-    color:#94a3b8;
+width:180px;
+border-radius:50%;
+border:4px solid #38bdf8;
 }
 
 .section{
-    margin-top:50px;
+margin-top:80px;
+}
+
+.section h2{
+margin-bottom:20px;
 }
 
 .skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
 }
 
 .skill{
-    background:#1e293b;
-    padding:10px 15px;
-    border-radius:8px;
+background:#1e293b;
+padding:10px 15px;
+border-radius:8px;
 }
 
 .projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .project{
-    background:#1e293b;
-    padding:20px;
-    border-radius:10px;
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-5px);
 }
 
 .project a{
-    color:#38bdf8;
-    text-decoration:none;
+color:#38bdf8;
+text-decoration:none;
+}
+
+.github-stats{
+margin-top:30px;
 }
 
 .footer{
-    text-align:center;
-    margin-top:50px;
-    color:#64748b;
+text-align:center;
+margin-top:80px;
+color:#64748b;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<div class="header">
+<nav>
 
-<img class="avatar" src="https://github.com/bachoai.png">
+<div class="logo">BachHoai</div>
 
-<h1>Bach Hoai</h1>
+<div>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="resume.pdf">Resume</a>
+</div>
 
-<p class="bio">
-Developer | Open Source | Tech Lover
-</p>
+</nav>
+
+<div class="hero">
+
+<div class="hero-text">
+
+<h1>Nguyen Nhu Hoai Bac</h1>
 
 <p>
-<a href="https://github.com/bachoai" style="color:#38bdf8;">GitHub Profile</a>
+Developer passionate about building software, open-source projects and exploring new technologies.
 </p>
+
+<div class="buttons">
+
+<a href="https://github.com/bachoai" class="btn-primary">
+GitHub
+</a>
+
+<a href="resume.pdf" class="btn-secondary">
+Download Resume
+</a>
 
 </div>
 
-<div class="section">
+</div>
+
+<img src="https://github.com/bachoai.png" class="avatar">
+
+</div>
+
+<div class="section" id="skills">
 
 <h2>🧠 Skills</h2>
 
 <div class="skills">
 
+<div class="skill">Python</div>
+<div class="skill">JavaScript</div>
 <div class="skill">HTML</div>
 <div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">Python</div>
+<div class="skill">C/C++</div>
 <div class="skill">Git</div>
 <div class="skill">Linux</div>
+<div class="skill">APIs</div>
 
 </div>
 
 </div>
 
-<div class="section">
+<div class="section" id="projects">
 
 <h2>🚀 Projects</h2>
 
 <div class="projects">
 
 <div class="project">
-<h3>Project 1</h3>
-<p>Website project example.</p>
-<a href="https://github.com/bachoai">View Project</a>
+
+<h3>Portfolio Website</h3>
+
+<p>Personal developer portfolio hosted on GitHub Pages.</p>
+
+<a href="https://github.com/bachoai">
+View Project
+</a>
+
 </div>
 
 <div class="project">
-<h3>Project 2</h3>
-<p>Automation script.</p>
-<a href="https://github.com/bachoai">View Project</a>
+
+<h3>Automation Scripts</h3>
+
+<p>Python scripts to automate development tasks.</p>
+
+<a href="https://github.com/bachoai">
+View Code
+</a>
+
 </div>
 
 <div class="project">
-<h3>Project 3</h3>
-<p>Open source contribution.</p>
-<a href="https://github.com/bachoai">View Project</a>
+
+<h3>Open Source Experiments</h3>
+
+<p>Various experiments and learning projects.</p>
+
+<a href="https://github.com/bachoai">
+Explore
+</a>
+
 </div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>📊 GitHub Stats</h2>
+
+<div class="github-stats">
+
+<img src="https://github-readme-stats.vercel.app/api?username=bachoai&show_icons=true&theme=tokyonight">
+
+<br><br>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bachoai&layout=compact&theme=tokyonight">
 
 </div>
 
 </div>
 
 <div class="footer">
-© 2026 Bach Hoai
+
+© 2026 Bach Hoai  
+Built with GitHub Pages
+
 </div>
 
 </div>
